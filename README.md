@@ -32,4 +32,9 @@ Deploy by uploading the folder to any static host (GitHub Pages, Netlify, Vercel
 ## Before launch
 
 - Replace the stock Unsplash photos (`.hero`, `.why-img`, `.sched-hero` in `css/styles.css`) with photos of the shop.
-- Confirm the hours (listings show Mon–Fri 8–5) and add the shop's email.
+- Add the shop's email.
+
+## Live site (GitHub Pages)
+
+Published at **https://sajansshergill.github.io/summit-automotive/**.
+GitHub settings: Settings → Pages → Build and deployment → *Deploy from a branch* → pick the branch with the site and `/ (root)`.
