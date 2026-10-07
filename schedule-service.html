@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schedule Service | {name}</title>
+  <meta name="description" content="Schedule auto repair, oil changes, brakes and tire service online at Summit Automotive, 475 Pavonia Ave, Jersey City, NJ.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23d62828'/%3E%3Cpath d='M8 29l9-15 6 9 3-4 6 10z' fill='white'/%3E%3C/svg%3E">
+</head>
+<body>
+
+
+  <div class="topbar">
+    <div class="container">
+      <div><span data-open-now class="open-now"></span></div>
+      <div class="topbar-right"><a data-shop-href="maps" data-shop="address"></a><span>Service: <a data-shop-href="phone" data-shop="phone"></a></span></div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="8" fill="#d62828"/><path d="M8 29l9-15 6 9 3-4 6 10z" fill="#fff"/></svg>
+        <span><span data-shop="name"></span><small>Auto Repair &amp; Tire Center</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#makes">Makes</a>
+        <a href="index.html#why">Why Us</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#visit">Hours &amp; Directions</a>
+        <a href="schedule-service.html" class="btn btn-primary btn-pill active"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>Schedule</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="promo-strip">
+    <div class="container">Serving Jersey City drivers since <span data-shop="since"></span> — domestic &amp; foreign repairs, tires and more. <a href="schedule-service.html">Book Online</a></div>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="notice">
+        <mark>Questions or need help booking? Call <a data-shop-href="phone" data-shop="phone"></a></mark>
+        <p><strong>PLEASE NOTE:</strong> Your online appointment is a request and must be confirmed. We'll call you to confirm your time before you arrive.</p>
+      </div>
+
+      <section class="sched-hero">
+        <div>
+          <h1>Schedule your service</h1>
+          <p>Tell us about your vehicle, pick a service and a time — it takes about a minute.</p>
+          <form class="lookup" id="lookup">
+            <label for="lookup-input" class="sr-only">Phone number</label>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            <input id="lookup-input" type="tel" placeholder="Start with your phone number" autocomplete="tel">
+            <button class="btn btn-primary" type="submit">Start</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <div class="scheduler-wrap" id="scheduler">
+      <div class="scheduler">
+        <div class="panel">
+          <ol class="progress" id="progress">
+            <li data-step="0"><span class="num">1</span>Vehicle</li>
+            <li data-step="1"><span class="num">2</span>Services</li>
+            <li data-step="2"><span class="num">3</span>Date &amp; Time</li>
+            <li data-step="3"><span class="num">4</span>Contact</li>
+            <li data-step="4"><span class="num">5</span>Review</li>
+          </ol>
+
+          <form id="sched-form" novalidate>
+            <div class="step-body">
+
+              <!-- Step 1: Vehicle -->
+              <div class="step-pane" data-pane="0">
+                <h2>Tell us about your vehicle</h2>
+                <p class="hint">We service domestic and foreign cars, SUVs and light trucks.</p>
+                <div class="fields">
+                  <div class="field">
+                    <label for="year">Year <span class="req">*</span></label>
+                    <select id="year" name="year" required></select>
+                    <div class="err">Select a year</div>
+                  </div>
+                  <div class="field">
+                    <label for="make">Make <span class="req">*</span></label>
+                    <select id="make" name="make" required>
+                      <option value="">Select make</option>
+                      <option>Acura</option><option>Audi</option><option>BMW</option><option>Buick</option><option>Cadillac</option>
+                      <option>Chevrolet</option><option>Chrysler</option><option>Dodge</option><option>Ford</option><option>GMC</option>
+                      <option>Honda</option><option>Hyundai</option><option>Infiniti</option><option>Jeep</option><option>Kia</option>
+                      <option>Lexus</option><option>Lincoln</option><option>Mazda</option><option>Mercedes-Benz</option><option>Mini</option>
+                      <option>Mitsubishi</option><option>Nissan</option><option>Ram</option><option>Subaru</option><option>Tesla</option>
+                      <option>Toyota</option><option>Volkswagen</option><option>Volvo</option><option>Other</option>
+                    </select>
+                    <div class="err">Select a make</div>
+                  </div>
+                  <div class="field">
+                    <label for="model">Model <span class="req">*</span></label>
+                    <input id="model" name="model" placeholder="e.g. Camry, Civic, F-150" required>
+                    <div class="err">Enter your model</div>
+                  </div>
+                  <div class="field">
+                    <label for="mileage">Approx. mileage</label>
+                    <input id="mileage" name="mileage" inputmode="numeric" placeholder="e.g. 65,000">
+                  </div>
+                  <div class="field full">
+                    <label for="vin">VIN or license plate <small style="color:var(--muted);font-weight:500">(optional)</small></label>
+                    <input id="vin" name="vin" placeholder="Helps us have the right parts ready">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 2: Services -->
+              <div class="step-pane" data-pane="1">
+                <h2>What can we help with?</h2>
+                <p class="hint">Choose one or more services. Not sure? Describe the problem below.</p>
+                <div id="svc-groups"></div>
+                <div class="field">
+                  <label for="notes">Describe any concerns or symptoms</label>
+                  <textarea id="notes" name="notes" placeholder="e.g. Squealing when braking, check engine light came on yesterday…"></textarea>
+                </div>
+              </div>
+
+              <!-- Step 3: Date & time -->
+              <div class="step-pane" data-pane="2">
+                <h2>Choose a date &amp; time</h2>
+                <p class="hint">Will you wait or drop off your vehicle?</p>
+                <div class="choice-row">
+                  <div class="svc-option">
+                    <input type="radio" name="visitType" id="vt-drop" value="Drop off" checked>
+                    <label for="vt-drop">Drop off <small>Leave the car — we'll call when it's ready</small></label>
+                  </div>
+                  <div class="svc-option">
+                    <input type="radio" name="visitType" id="vt-wait" value="Wait">
+                    <label for="vt-wait">Wait <small>Best for quick services like oil &amp; tires</small></label>
+                  </div>
+                </div>
+                <div class="date-strip" id="dates" role="listbox" aria-label="Appointment date"></div>
+                <div id="slots-wrap"><div class="slots" id="slots" role="listbox" aria-label="Appointment time"></div></div>
+              </div>
+
+              <!-- Step 4: Contact -->
+              <div class="step-pane" data-pane="3">
+                <h2>Your contact information</h2>
+                <p class="hint">We'll use this to confirm your appointment.</p>
+                <div class="fields">
+                  <div class="field">
+                    <label for="first">First name <span class="req">*</span></label>
+                    <input id="first" name="first" autocomplete="given-name" required>
+                    <div class="err">Enter your first name</div>
+                  </div>
+                  <div class="field">
+                    <label for="last">Last name <span class="req">*</span></label>
+                    <input id="last" name="last" autocomplete="family-name" required>
+                    <div class="err">Enter your last name</div>
+                  </div>
+                  <div class="field">
+                    <label for="phone">Mobile phone <span class="req">*</span></label>
+                    <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(201) 555-0100" required>
+                    <div class="err">Enter a valid 10-digit phone number</div>
+                  </div>
+                  <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+                    <div class="err">Enter a valid email</div>
+                  </div>
+                  <div class="field full">
+                    <label for="contactPref">Preferred contact method</label>
+                    <select id="contactPref" name="contactPref">
+                      <option>Phone call</option><option>Text message</option><option>Email</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 5: Review -->
+              <div class="step-pane" data-pane="4">
+                <h2>Review your request</h2>
+                <p class="hint">Make sure everything looks right, then send your request.</p>
+                <div class="review-list" id="review-list"></div>
+              </div>
+
+              <!-- Done -->
+              <div class="step-pane" data-pane="5">
+                <div class="confirm">
+                  <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <h2 id="done-title">Request received!</h2>
+                  <p id="done-msg"></p>
+                  <div class="hero-actions" style="justify-content:center">
+                    <a data-shop-href="phone" class="btn btn-primary">Call <span data-shop="phone"></span></a>
+                    <a href="index.html" class="btn btn-ghost">Back to Home</a>
+                  </div>
+                </div>
+              </div>
+
+              <p class="step-error" id="step-error" role="alert"></p>
+            </div>
+
+            <div class="step-nav" id="step-nav">
+              <button type="button" class="btn btn-ghost" id="back">← Back</button>
+              <button type="button" class="btn btn-primary" id="next">Continue →</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="sidebar">
+          <div class="panel side-card">
+            <h3>Your appointment</h3>
+            <div class="summary-row"><span>Vehicle</span><span id="sum-vehicle">—</span></div>
+            <div class="summary-row"><span>Services</span><span id="sum-services">—</span></div>
+            <div class="summary-row"><span>Date</span><span id="sum-date">—</span></div>
+            <div class="summary-row"><span>Time</span><span id="sum-time">—</span></div>
+            <div class="summary-row"><span>Visit</span><span id="sum-visit">Drop off</span></div>
+          </div>
+          <div class="panel side-card">
+            <h3>Prefer to call?</h3>
+            <p style="margin:0 0 .5rem;color:var(--muted)">Our service desk is happy to help.</p>
+            <a class="phone" data-shop-href="phone" data-shop="phone"></a>
+            <table class="hours-table" style="margin-top:12px"><tbody data-hours-table></tbody></table>
+          </div>
+          <div class="panel side-card">
+            <h3>Why book with us</h3>
+            <ul class="perks">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>In business since <span data-shop="since"></span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Domestic &amp; foreign vehicles</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Estimate before any work</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Repairs &amp; tires in one stop</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <article class="prose">
+      <h2>Save Time. Schedule Your Jersey City Auto Service Online!</h2>
+      <p>You know the feeling: an <a href="?service=oil#scheduler">oil change</a> is coming due, a tire looks low, or the brakes have started to squeal — and you know a phone call means explaining everything and going back and forth to find a time. Skip the hassle and request service on your own time, 24/7, with our online scheduling tool.</p>
+
+      <h2>How Does the Online Service Scheduling Tool Work?</h2>
+      <p>It's a simple, step-by-step way to request service without missing any important details. Start with your vehicle's year, make, model and mileage so we know what we'll be working on, then choose from a list of common services. If what you need isn't listed, just describe it in the notes.</p>
+      <p>Next, let us know whether you'd like to wait or drop the vehicle off, and pick a day and time from the calendar of open slots. Add your contact details, review, and send. We'll call to confirm your appointment — then just bring your car to <span data-shop="address"></span> at your scheduled time.</p>
+
+      <h2>Car Service and Auto Repair at Summit Automotive</h2>
+      <p>Drivers from Journal Square, the Heights, Hilltop, Bergen-Lafayette and across Hudson County can request service for any domestic or foreign vehicle, including:</p>
+      <ul>
+        <li>Oil changes</li>
+        <li>Brake service and repair</li>
+        <li>Tune-ups</li>
+        <li>Tire replacement and flat repair</li>
+        <li>Tire rotation and balancing</li>
+        <li>Check engine light diagnostics</li>
+        <li>Battery, starter and alternator service</li>
+        <li>Suspension, steering and exhaust repair</li>
+      </ul>
+
+      <h2>Take Advantage of Our Online Service Scheduling Tool Today!</h2>
+      <p>Chances are you already know when your next service is due — so get a head start and <a href="#scheduler">request your appointment</a> now. We've been keeping Jersey City drivers on the road since <span data-shop="since"></span>, and we look forward to taking care of your vehicle.</p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">
+            <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="8" fill="#d62828"/><path d="M8 29l9-15 6 9 3-4 6 10z" fill="#fff"/></svg>
+            <span data-shop="name"></span>
+          </a>
+          <p data-shop="tagline"></p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="schedule-service.html?service=oil">Oil Change</a></li>
+            <li><a href="schedule-service.html?service=brakes">Brakes</a></li>
+            <li><a href="schedule-service.html?service=diagnostic">Diagnostics</a></li>
+            <li><a href="schedule-service.html?service=tires">Tires &amp; Alignment</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Service &amp; Tires</h4>
+          <ul>
+            <li><a href="schedule-service.html">Schedule Service</a></li>
+            <li><a href="index.html#makes">Makes We Service</a></li>
+            <li><a href="index.html#reviews">Reviews</a></li>
+            <li><a href="index.html#visit">Hours &amp; Directions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a data-shop-href="phone" data-shop="phone"></a></li>
+            <li data-needs-email><a data-shop-href="email" data-shop="email"></a></li>
+            <li><a data-shop-href="maps"><span data-shop="street"></span><br><span data-shop="cityline"></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-shop="year"></span> <span data-shop="legalName"></span>. All rights reserved.</span>
+        <span>Domestic &amp; foreign auto repair · Tire center</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-bar">
+    <a data-shop-href="phone">Call Now</a>
+    <a href="#scheduler">Book Service</a>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/schedule.js"></script>
+</body>
+</html>

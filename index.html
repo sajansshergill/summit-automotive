@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{name} | Auto Repair &amp; Service</title>
+  <meta name="description" content="Summit Automotive — domestic &amp; foreign auto repair and tire center at 475 Pavonia Ave, Jersey City, NJ since 1979. Brakes, oil changes, tune-ups, tires. Schedule service online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23d62828'/%3E%3Cpath d='M8 29l9-15 6 9 3-4 6 10z' fill='white'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <div><span data-open-now class="open-now"></span></div>
+      <div class="topbar-right"><a data-shop-href="maps" data-shop="address"></a><span>Service: <a data-shop-href="phone" data-shop="phone"></a></span></div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="8" fill="#d62828"/><path d="M8 29l9-15 6 9 3-4 6 10z" fill="#fff"/></svg>
+        <span><span data-shop="name"></span><small>Auto Repair &amp; Tire Center</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#makes">Makes</a>
+        <a href="#why">Why Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Hours &amp; Directions</a>
+        <a href="schedule-service.html" class="btn btn-primary btn-pill"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>Schedule</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="promo-strip">
+    <div class="container">Serving Jersey City drivers since <span data-shop="since"></span> — domestic &amp; foreign repairs, tires and more. <a href="schedule-service.html">Book Online</a></div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <span class="eyebrow">Jersey City · <span data-shop="neighborhood"></span></span>
+          <h1>Your neighborhood auto repair &amp; tire center.</h1>
+          <p class="lead"><span data-shop="tagline"></span> Brakes, oil changes, tune-ups, tires and repairs on all makes and models.</p>
+          <div class="hero-actions">
+            <a href="schedule-service.html" class="btn btn-primary">Schedule Service Online</a>
+            <a data-shop-href="phone" class="btn btn-outline">Call <span data-shop="phone"></span></a>
+          </div>
+          <div class="hero-badges">
+            <div><strong>Since <span data-shop="since"></span></strong>Family-run on Pavonia Ave</div>
+            <div><strong><span data-shop="years"></span>+ years</strong>Serving Hudson County</div>
+            <div><strong>All makes</strong>Domestic &amp; foreign</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container quick">
+      <div class="quick-grid">
+        <a href="schedule-service.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></svg>
+          <div><strong>Book Appointment</strong><span>Pick a time in 60 seconds</span></div>
+        </a>
+        <a href="schedule-service.html?service=tires">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+          <div><strong>Tire Center</strong><span>Flats fixed, new tires</span></div>
+        </a>
+        <a data-shop-href="maps">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><strong>Get Directions</strong><span>Open in Google Maps</span></div>
+        </a>
+        <a data-shop-href="phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg>
+          <div><strong>Call the Shop</strong><span data-shop="phone"></span></div>
+        </a>
+      </div>
+    </div>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Our Services</span>
+          <h2>Complete care for every make &amp; model</h2>
+          <p>From routine maintenance to major repairs, we work on cars, SUVs and light trucks — domestic and foreign.</p>
+        </div>
+        <div class="services">
+          <article class="service">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2.7C9 7 6 10.3 6 14a6 6 0 0012 0c0-3.7-3-7-6-11.3z"/></svg></div>
+            <h3>Oil Change &amp; Maintenance</h3>
+            <p>Conventional and synthetic oil changes, filters, fluid flushes and factory-scheduled maintenance.</p>
+            <a href="schedule-service.html?service=oil">Book now →</a>
+          </article>
+          <article class="service">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg></div>
+            <h3>Brake Service</h3>
+            <p>Pads, rotors, calipers, brake lines and fluid — stop with confidence.</p>
+            <a href="schedule-service.html?service=brakes">Book now →</a>
+          </article>
+          <article class="service">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h4M8 10v4M15 11h.01M18 13h.01"/></svg></div>
+            <h3>Check Engine &amp; Diagnostics</h3>
+            <p>Check-engine light on? We pinpoint the problem with advanced computer diagnostics.</p>
+            <a href="schedule-service.html?service=diagnostic">Book now →</a>
+          </article>
+          <article class="service">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
+            <h3>Tires &amp; Alignment</h3>
+            <p>New and replacement tires, rotation, balancing and flats fixed while you wait.</p>
+            <a href="schedule-service.html?service=tires">Book now →</a>
+          </article>
+          <article class="service">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg></div>
+            <h3>A/C &amp; Heating</h3>
+            <p>A/C recharge, leak detection, compressor and heater core repair to keep you comfortable.</p>
+            <a href="schedule-service.html?service=ac">Book now →</a>
+          </article>
+          <article class="service">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="13" rx="2"/><path d="M6 7V4h4v3M14 7V4h4v3M7 13h3M15.5 11.5v3M14 13h3"/></svg></div>
+            <h3>Battery &amp; Electrical</h3>
+            <p>Battery testing and replacement, starters, alternators, lighting and wiring repair.</p>
+            <a href="schedule-service.html?service=battery">Book now →</a>
+          </article>
+          <article class="service">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17h2l2-6h10l2 6h2M5 17v2M19 17v2M7 11l1.5-4h7L17 11"/><circle cx="8" cy="15" r="1"/><circle cx="16" cy="15" r="1"/></svg></div>
+            <h3>Suspension &amp; Steering</h3>
+            <p>Shocks, struts, ball joints, tie rods and power steering for a smooth, safe ride.</p>
+            <a href="schedule-service.html?service=suspension">Book now →</a>
+          </article>
+          <article class="service">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 00.3 1.8l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.7 1.7 0 00-1.8-.3 1.7 1.7 0 00-1 1.5V21a2 2 0 01-4 0v-.1A1.7 1.7 0 009 19.4a1.7 1.7 0 00-1.8.3l-.1.1a2 2 0 11-2.8-2.8l.1-.1a1.7 1.7 0 00.3-1.8 1.7 1.7 0 00-1.5-1H3a2 2 0 010-4h.1A1.7 1.7 0 004.6 9a1.7 1.7 0 00-.3-1.8l-.1-.1a2 2 0 112.8-2.8l.1.1a1.7 1.7 0 001.8.3H9a1.7 1.7 0 001-1.5V3a2 2 0 014 0v.1a1.7 1.7 0 001 1.5 1.7 1.7 0 001.8-.3l.1-.1a2 2 0 112.8 2.8l-.1.1a1.7 1.7 0 00-.3 1.8V9a1.7 1.7 0 001.5 1H21a2 2 0 010 4h-.1a1.7 1.7 0 00-1.5 1z"/></svg></div>
+            <h3>Engine &amp; Transmission</h3>
+            <p>Timing belts, cooling systems, tune-ups, transmission service and major engine repair.</p>
+            <a href="schedule-service.html?service=engine">Book now →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="makes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Domestic &amp; Foreign</span>
+          <h2>We service every make &amp; model</h2>
+          <p>No need to go back to the dealer. Bring in your daily driver, family SUV or work van.</p>
+        </div>
+        <div class="makes">
+          <span>Toyota</span><span>Honda</span><span>Nissan</span><span>Ford</span><span>Chevrolet</span><span>Jeep</span>
+          <span>Hyundai</span><span>Kia</span><span>Subaru</span><span>BMW</span><span>Mercedes-Benz</span><span>Volkswagen</span>
+          <span>Lexus</span><span>Acura</span><span>Dodge &amp; Ram</span><span>GMC</span><span>Mazda</span><span>&amp; more</span>
+        </div>
+        <p class="fine">Brand names are trademarks of their respective owners and are listed to describe the vehicles we service.</p>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="container why">
+        <div class="why-img" role="img" aria-label="Technician working on a car"><div class="why-badge"><strong>Since <span data-shop="since"></span></strong><span data-shop="street"></span>, <span data-shop="city"></span></div></div>
+        <div>
+          <span class="eyebrow">Why Choose Us</span>
+          <h2>Honest repairs from a shop that's been here since <span data-shop="since"></span>.</h2>
+          <p>We're a local, independent shop that treats every car like our own. We explain what your car needs, and you decide.</p>
+          <ul class="checks">
+            <li><div><strong>Decades of experience</strong><span>Serving Jersey City drivers for over <span data-shop="years"></span> years.</span></div></li>
+            <li><div><strong>Estimates before work begins</strong><span>We call you with what we found and the price — nothing gets done without your OK.</span></div></li>
+            <li><div><strong>Repairs and tires under one roof</strong><span>From a flat tire to a brake job, handle it in one stop.</span></div></li>
+            <li><div><strong>Easy to reach</strong><span>On Pavonia Ave near Journal Square, minutes from Route 139 and the Turnpike.</span></div></li>
+          </ul>
+          <a href="schedule-service.html" class="btn btn-primary">Schedule Your Visit</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">How It Works</span>
+          <h2>Service made simple</h2>
+        </div>
+        <div class="steps">
+          <div class="step"><h3>Book online or call</h3><p>Choose your service and a time that works for you.</p></div>
+          <div class="step"><h3>Drop off or wait</h3><p>Bring your car in at your scheduled time and leave the keys with us.</p></div>
+          <div class="step"><h3>Approve the estimate</h3><p>We inspect, explain, and only proceed with your OK.</p></div>
+          <div class="step"><h3>Drive away happy</h3><p>Pick up your car and get back on the road.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="reviews-cta">
+          <div>
+            <span class="eyebrow">Reviews</span>
+            <h2>Hear it from our customers</h2>
+            <p>Read what Jersey City drivers say about us on Google — and if we've taken care of your car, we'd love to hear from you too.</p>
+          </div>
+          <a data-shop-href="maps" class="btn btn-primary">Read Our Google Reviews</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="visit">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Visit Us</span>
+          <h2>Hours &amp; directions</h2>
+        </div>
+        <div class="visit">
+          <div class="visit-info">
+            <h3>Address</h3>
+            <p><strong data-shop="name"></strong><br><span data-shop="street"></span><br><span data-shop="cityline"></span><br>
+              <a data-shop-href="maps">Get directions →</a></p>
+            <h3>Contact</h3>
+            <p><a data-shop-href="phone" data-shop="phone"></a><span data-needs-email><br><a data-shop-href="email" data-shop="email"></a></span></p>
+            <h3>Service Hours</h3>
+            <table class="hours-table"><tbody data-hours-table></tbody></table>
+          </div>
+          <iframe data-map title="Map to the shop" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <div>
+          <h2>Ready for service?</h2>
+          <p>Request an appointment online in under a minute — we'll call to confirm.</p>
+        </div>
+        <a href="schedule-service.html" class="btn btn-primary">Schedule Service</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">
+            <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="8" fill="#d62828"/><path d="M8 29l9-15 6 9 3-4 6 10z" fill="#fff"/></svg>
+            <span data-shop="name"></span>
+          </a>
+          <p data-shop="tagline"></p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="schedule-service.html?service=oil">Oil Change</a></li>
+            <li><a href="schedule-service.html?service=brakes">Brakes</a></li>
+            <li><a href="schedule-service.html?service=diagnostic">Diagnostics</a></li>
+            <li><a href="schedule-service.html?service=tires">Tires &amp; Alignment</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Service &amp; Tires</h4>
+          <ul>
+            <li><a href="schedule-service.html">Schedule Service</a></li>
+            <li><a href="#makes">Makes We Service</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#visit">Hours &amp; Directions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a data-shop-href="phone" data-shop="phone"></a></li>
+            <li data-needs-email><a data-shop-href="email" data-shop="email"></a></li>
+            <li><a data-shop-href="maps"><span data-shop="street"></span><br><span data-shop="cityline"></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-shop="year"></span> <span data-shop="legalName"></span>. All rights reserved.</span>
+        <span>Domestic &amp; foreign auto repair · Tire center</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-bar">
+    <a data-shop-href="phone">Call Now</a>
+    <a href="schedule-service.html">Book Service</a>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
