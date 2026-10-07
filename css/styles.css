@@ -396,3 +396,92 @@ p { margin: 0 0 1em; }
 .why-badge { position: absolute; left: 20px; bottom: 20px; background: var(--accent); color: #fff; padding: 16px 20px; border-radius: 8px; box-shadow: var(--shadow); }
 .why-badge strong { display: block; font-size: 1.5rem; line-height: 1.1; }
 .why-badge span { font-size: .9rem; opacity: .9; }
+
+/* ================= Mobile refinements ================= */
+.show-sm { display: none; }
+input, select, textarea { font-size: 16px; } /* stops iOS zooming into fields */
+.logo > span { white-space: nowrap; }
+
+@media (max-width: 640px) {
+  .hide-sm { display: none !important; }
+  .show-sm { display: inline; }
+  .container { padding: 0 16px; }
+
+  /* Compact one-line top bar: open status + phone */
+  .topbar { font-size: .8rem; }
+  .topbar .container { flex-wrap: nowrap; padding-top: 6px; padding-bottom: 6px; align-items: center; }
+  .topbar-right { gap: 0; flex: none; white-space: nowrap; }
+  .topbar .open-now { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+  .topbar .container > div:first-child { min-width: 0; overflow: hidden; }
+
+  .header .container { height: 62px; }
+  .nav { top: 62px; max-height: calc(100vh - 62px); overflow-y: auto; }
+  .logo { font-size: 1.05rem; gap: .5rem; }
+  .logo-mark { width: 32px; height: 32px; }
+  .logo small { font-size: .55rem; letter-spacing: .12em; }
+  .nav a { padding: 14px 0; font-size: 1.05rem; }
+
+  .promo-strip { padding: 10px 0; font-size: .88rem; }
+
+  .hero .container { padding-top: 48px; padding-bottom: 88px; }
+  .hero h1 { font-size: 2rem; }
+  .hero p.lead { font-size: 1.02rem; }
+  .eyebrow { font-size: .72rem; letter-spacing: .12em; }
+  .hero-actions .btn { flex: 1 1 100%; padding: 1em; }
+  .hero-badges { gap: 1rem 1.5rem; margin-top: 1.75rem; }
+  .hero-badges div { flex: 1 1 40%; font-size: .82rem; }
+  .hero-badges strong { font-size: 1.2rem; }
+
+  .quick { margin-top: -40px; }
+  .quick-grid a { padding: 16px; }
+
+  .section { padding: 56px 0; }
+  .section-head { margin-bottom: 2rem; }
+  .service { padding: 22px; }
+  .why-img { min-height: 220px; }
+  .reviews-cta .btn, .cta-band .btn, .why .btn { width: 100%; }
+  .visit-info { padding: 24px; }
+  .visit iframe { min-height: 260px; }
+  .cta-band { padding: 40px 0; }
+  .footer { padding-top: 44px; }
+
+  /* Schedule page */
+  .notice { margin: 24px auto 18px; }
+  .notice mark { font-size: 1.05rem; }
+  .notice p { font-size: .92rem; }
+  .sched-hero { min-height: 0; padding: 36px 16px; margin: 0 -16px; border-radius: 0; }
+  .sched-hero h1 { font-size: 1.75rem; }
+  .sched-hero p { font-size: .95rem; }
+  .lookup .btn { padding: .6em 1em; letter-spacing: .08em; }
+  .scheduler-wrap { margin-top: 24px; padding: 0 12px; }
+  .progress li { min-width: 0; flex: 1; padding: 14px 4px; font-size: 0; }
+  .progress li .num { margin: 0; font-size: .8rem; width: 28px; height: 28px; }
+  .progress li.active { font-size: .78rem; flex: 2.2; }
+  .progress li.active .num { margin-right: 6px; }
+  .progress { overflow: hidden; }
+  .step-body { padding: 22px 18px; }
+  .step-body h2 { font-size: 1.3rem; }
+  .step-nav { padding: 14px 18px; }
+  .step-nav .btn { flex: 1; }
+  .date-strip { margin: 0 -18px 18px; padding: 0 18px 8px; }
+  .date-btn { width: 68px; }
+  .slots { grid-template-columns: repeat(3, 1fr); }
+  .slot { padding: 12px 4px; }
+  .review-item { padding: 14px; }
+  .confirm { padding: 40px 8px; }
+  .confirm .hero-actions .btn { flex: 1 1 100%; }
+  .prose { padding: 40px 16px 56px; }
+  .prose h2 { font-size: 1.2rem; }
+}
+
+@media (max-width: 360px) {
+  .logo small { display: none; }
+  .hero h1 { font-size: 1.75rem; }
+  .slots { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Tablets */
+@media (min-width: 641px) and (max-width: 960px) {
+  .hero .container { padding-top: 80px; padding-bottom: 100px; }
+  .section { padding: 72px 0; }
+}
